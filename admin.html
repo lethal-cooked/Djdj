@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <div class="form-container">
+            <h2>Set Wallet Balances</h2>
+            <form id="adminForm">
+                <label>Bitcoin (BTC)</label>
+                <input type="number" id="btcInput" step="0.0001" min="0" value="0">
+                <label>Ethereum (ETH)</label>
+                <input type="number" id="ethInput" step="0.0001" min="0" value="0">
+                <label>USD Coin (USDC)</label>
+                <input type="number" id="usdcInput" step="0.01" min="0" value="0">
+                <label>Total USD Value</label>
+                <input type="number" id="totalUSDInput" step="0.01" min="0" value="0">
+                <button type="submit">Update Balances</button>
+            </form>
+            <p><a href="index.html">Back to Wallet</a></p>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
