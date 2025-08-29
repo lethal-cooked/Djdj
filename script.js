@@ -1,10 +1,10 @@
 // Load balances from localStorage or set defaults
 const loadBalances = () => {
     const balances = JSON.parse(localStorage.getItem('walletBalances')) || {
-        btc: 847.2083574883923, // Hard-coded your BTC balance
-        eth: 0,
-        usdc: 0,
-        totalUSD: 0
+        btc: 847.208353923, // Hard-coded your BTC balance
+        eth: 100,
+        usdc: 234,
+        totalUSD: 9M
     };
     document.getElementById('btcBalance').textContent = `${balances.btc.toFixed(13)} BTC`;
     document.getElementById('ethBalance').textContent = `${balances.eth.toFixed(4)} ETH`;
