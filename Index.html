@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Crypto Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Wallet</h1>
+            <p>Secure Crypto Management</p>
+        </div>
+        <div class="wallet">
+            <h2>Portfolio Balance</h2>
+            <div class="balance" id="totalBalance">$0.00</div>
+            <div class="assets">
+                <div class="asset">
+                    <span>Bitcoin (BTC)</span>
+                    <span id="btcBalance">0.0000 BTC</span>
+                </div>
+                <div class="asset">
+                    <span>Ethereum (ETH)</span>
+                    <span id="ethBalance">0.0000 ETH</span>
+                </div>
+                <div class="asset">
+                    <span>USD Coin (USDC)</span>
+                    <span id="usdcBalance">0.00 USDC</span>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="portfolioChart"></canvas>
+            </div>
+        </div>
+        <a href="admin.html" class="admin-link" style="display: none;">Admin</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
